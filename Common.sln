@@ -10,26 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests.Unit", "Tests.Unit", "{D210F986-6FEE-49CC-B636-D6437D740784}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{DA95A93C-C563-4DF3-871A-0A6B9BFA4C90}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadicalGeek.Common.UnitTests", "RadicalGeek.Common.UnitTests\RadicalGeek.Common.UnitTests.csproj", "{CBEFDDAB-CF92-4075-B6A9-30DEC531A6FF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadicalGeek.Common", "RadicalGeek.Common\RadicalGeek.Common.csproj", "{56FB5281-1357-4612-8C0B-6822C465AECE}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://nadc1papptier01:8080/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Dollar.Common.UnitTests\\Dollar.Common.UnitTests.csproj
-		SccProjectTopLevelParentUniqueName1 = Common.sln
-		SccProjectName1 = Dollar.Common.UnitTests
-		SccLocalPath1 = Dollar.Common.UnitTests
-		SccProjectUniqueName2 = Dollar.Common\\Dollar.Common.csproj
-		SccProjectName2 = Dollar.Common
-		SccLocalPath2 = Dollar.Common
-	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = DataExtensions.vsmdi
 	EndGlobalSection
