@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37E3C0ED-D1F0-4A77-89D7-5385383AA87D}"
+	ProjectSection(SolutionItems) = preProject
+		DataExtensions.vsmdi = DataExtensions.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests.Unit", "Tests.Unit", "{D210F986-6FEE-49CC-B636-D6437D740784}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{DA95A93C-C563-4DF3-871A-0A6B9BFA4C90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadicalGeek.Common.UnitTests", "RadicalGeek.Common.UnitTests\RadicalGeek.Common.UnitTests.csproj", "{CBEFDDAB-CF92-4075-B6A9-30DEC531A6FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadicalGeek.Common", "RadicalGeek.Common\RadicalGeek.Common.csproj", "{56FB5281-1357-4612-8C0B-6822C465AECE}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://nadc1papptier01:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Dollar.Common.UnitTests\\Dollar.Common.UnitTests.csproj
+		SccProjectTopLevelParentUniqueName1 = Common.sln
+		SccProjectName1 = Dollar.Common.UnitTests
+		SccLocalPath1 = Dollar.Common.UnitTests
+		SccProjectUniqueName2 = Dollar.Common\\Dollar.Common.csproj
+		SccProjectName2 = Dollar.Common
+		SccLocalPath2 = Dollar.Common
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DataExtensions.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBEFDDAB-CF92-4075-B6A9-30DEC531A6FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBEFDDAB-CF92-4075-B6A9-30DEC531A6FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBEFDDAB-CF92-4075-B6A9-30DEC531A6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBEFDDAB-CF92-4075-B6A9-30DEC531A6FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56FB5281-1357-4612-8C0B-6822C465AECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56FB5281-1357-4612-8C0B-6822C465AECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56FB5281-1357-4612-8C0B-6822C465AECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56FB5281-1357-4612-8C0B-6822C465AECE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CBEFDDAB-CF92-4075-B6A9-30DEC531A6FF} = {D210F986-6FEE-49CC-B636-D6437D740784}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35;packages\Unity.Interception.2.1.505.2\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Logging.5.0.505.0\lib\NET35
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56FB5281-1357-4612-8C0B-6822C465AECE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RadicalGeek.Common</RootNamespace>
+    <AssemblyName>RadicalGeek.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Boolean\BoolExtensionMethods.cs" />
+    <Compile Include="Collections\AutoDictionary.cs" />
+    <Compile Include="Collections\CacheList.cs" />
+    <Compile Include="Collections\DeferredExecutionQueue.cs" />
+    <Compile Include="Collections\CollectionsExtensionMethods.cs" />
+    <Compile Include="Collections\OrderedActionQueue.cs" />
+    <Compile Include="Collections\PagingList.cs" />
+    <Compile Include="Concurrency\LimitedConcurrencyTaskFactory.cs" />
+    <Compile Include="Concurrency\LimitedConcurrencyTaskScheduler.cs" />
+    <Compile Include="Cryptography\CryptoBytes.cs" />
+    <Compile Include="Cryptography\EncryptionKeySet.cs" />
+    <Compile Include="Cryptography\Rijndael.cs" />
+    <Compile Include="Data\DataRepository.cs" />
+    <Compile Include="Data\DisposingDbDataReader.cs" />
+    <Compile Include="Data\DataExtensionMethods.cs" />
+    <Compile Include="Data\IDataRepository.cs" />
+    <Compile Include="Data\OdbcDataRepository.cs" />
+    <Compile Include="Data\OleDbDataRepository.cs" />
+    <Compile Include="Data\SimpleDbParam.cs" />
+    <Compile Include="Data\SqlDataRepository.cs" />
+    <Compile Include="Finance\Amount.cs" />
+    <Compile Include="Finance\Currencies\Currency.cs" />
+    <Compile Include="Finance\Currencies\Euro.cs" />
+    <Compile Include="Finance\Currencies\JpYen.cs" />
+    <Compile Include="Finance\Currencies\Sterling.cs" />
+    <Compile Include="Finance\Currencies\UsDollar.cs" />
+    <Compile Include="GenericComparer.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Logging\LogEntry.cs" />
+    <Compile Include="Logging\Logger.cs" />
+    <Compile Include="Logging\LoggingSeverity.cs" />
+    <Compile Include="Patterns\DisposableProxy\DisposableProxy.cs" />
+    <Compile Include="Patterns\DisposableProxy\IDisposableProxy.cs" />
+    <Compile Include="Patterns\InversionOfControl\IoC.cs" />
+    <Compile Include="Numbers\NumbersExtensionMethods.cs" />
+    <Compile Include="Patterns\Commander\Command.cs" />
+    <Compile Include="Patterns\Commander\CommandManager.cs" />
+    <Compile Include="Patterns\LazyLoading\LazyLoader.cs" />
+    <Compile Include="Patterns\ServiceProxy\IServiceProxy.cs" />
+    <Compile Include="Patterns\ServiceProxy\ServiceProxy.cs" />
+    <Compile Include="Patterns\Singleton\Singleton.cs" />
+    <Compile Include="Patterns\Singleton\SingletonFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\MergeFieldAttribute.cs" />
+    <Compile Include="Reflection\ReflectionExtensionMethods.cs" />
+    <Compile Include="Security\CertificateException.cs" />
+    <Compile Include="Security\CertificateInfo.cs" />
+    <Compile Include="Security\MultipleCertificatesException.cs" />
+    <Compile Include="Services\BasicHttpServiceClient.cs" />
+    <Compile Include="Services\NetTcpServiceClient.cs" />
+    <Compile Include="Services\GenericService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\NamedPipesServiceClient.cs" />
+    <Compile Include="Services\GenericServiceClientBaseClass.cs" />
+    <Compile Include="Services\ServiceClientGenerator.cs" />
+    <Compile Include="Services\ServiceClientType.cs" />
+    <Compile Include="Services\WsHttpServiceClient.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Structures\None.cs" />
+    <Compile Include="Cryptography\EncryptionKey.cs" />
+    <Compile Include="Text\MatchType.cs" />
+    <Compile Include="Time\Clock.cs" />
+    <Compile Include="Text\TextExtensionMethods.cs" />
+    <Compile Include="Security\CertificateNotFoundException.cs" />
+    <Compile Include="Security\Certificates.cs" />
+    <Compile Include="Validation\IDataValidator.cs" />
+    <Compile Include="Validation\IValidator.cs" />
+    <Compile Include="Validation\Luhn.cs" />
+    <Compile Include="Validation\ValidationResult.cs" />
+    <Compile Include="Validation\Validator.cs" />
+    <Compile Include="Xml\XmlExtensionMethods.cs" />
+    <Compile Include="Xml\XmlNullable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common">
+      <HintPath>..\packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging">
+      <HintPath>..\packages\EnterpriseLibrary.Logging.5.0.505.0\lib\NET35\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\packages\Unity.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\packages\Unity.Interception.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\packages\Unity.Interception.2.1.505.2\lib\NET35\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Expressions\" />
+    <Folder Include="Xml\Attributes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if "$(ConfigurationName)" == "Release" ( 
+"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\tf.exe" checkout "$(SolutionDir)..\..\..\LibDollar\$(TargetFileName)"
+xcopy "$(TargetDir)$(TargetFileName)" /y "$(SolutionDir)..\..\..\LibDollar"
+)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
